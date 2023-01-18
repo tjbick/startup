@@ -5,3 +5,7 @@ Modified a third time twice on Github twice on vsCode
 # Notes
 - Merging is kind of a pain. 
 - git add can be skipped (if everything needs to be added) with a -a flag on the commit 
+
+# Main Project notes
+http://13.58.131.122
+ssh -i [file] ubuntu@13.58.131.122
