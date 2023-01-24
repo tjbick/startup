@@ -21,6 +21,7 @@ file sharing, CommuNOTEe brings students, with their notes, together.
 - Direct message 
 - Take notes and have them saved on the cloud
 - Notes can be shared with either read-only or edit permissions
+- Message board where posts can be replied to directly
 
 
 # Notes
