@@ -1,9 +1,13 @@
 # startup
+
 This is the first assignment
 Modified a third time twice on Github twice on vsCode
 
 # Elevator Pitch
-Notes, messages, discussion boards. CommuNOTEe brings them all together. Form groups with your classmates to help eachother through direct messaging, sharing your notes with just a few clicks, and posting questions to the whole group.
+
+Notes. Messages. Group communication. CommuNOTEe is a place where classmates can
+assist each other easier than ever before. With encryped messaging and secure
+file sharing, CommuNOTEe brings students, with their notes, together.
 
 ![image](https://user-images.githubusercontent.com/59898692/213307402-59a06767-a0f1-4975-8ef1-bc8ee1658108.png)
 
@@ -12,10 +16,12 @@ Notes, messages, discussion boards. CommuNOTEe brings them all together. Form gr
 ![image](https://user-images.githubusercontent.com/59898692/213307644-ab2f1bc9-4ef6-455a-b960-0dc14a905676.png)
 
 ## Key Features
+
 - Secure Login
 - Direct message 
 - Take notes and have them saved on the cloud
 - Notes can be shared with either read-only or edit permissions
+- Message board where posts can be replied to directly
 
 
 # Notes
