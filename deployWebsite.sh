@@ -1,18 +1,20 @@
 #!/bin/bash
 
-while getopts k:h: flag
-do
-    case "${flag}" in
-        k) key=${OPTARG};;
-        h) hostname=${OPTARG};;
-    esac
-done
+# while getopts k:h: flag
+# do
+#     case "${flag}" in
+#         k) key=${OPTARG};;
+#         h) hostname=${OPTARG};;
+#     esac
+# done
 
-if [[ -z "$key" || -z "$hostname" ]]; then
-    printf "\nMissing required parameter.\n"
-    printf "  syntax: deployWebsite.sh -k <pem key file> -h <hostname>\n\n"
-    exit 1
-fi
+# if [[ -z "$key" || -z "$hostname" ]]; then
+#     printf "\nMissing required parameter.\n"
+#     printf "  syntax: deployWebsite.sh -k <pem key file> -h <hostname>\n\n"
+#     exit 1
+# fi
+hostname=communotee.click
+key=../../AWS/260-server.pem
 
 printf "\n----> Deploying root website to $hostname with $key\n-------------------------------\n"
 
