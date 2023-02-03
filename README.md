@@ -28,6 +28,12 @@ file sharing, CommuNOTEe brings students, with their notes, together.
 - Merging is kind of a pain. 
 - git add can be skipped (if everything needs to be added) with a -a flag on the commit 
 
+## Simon-html
+
+- The html classes (i.e. <div class="...">) are only used when it is nice to have things grouped together. Not all of them need classes
+- The <menu> tag is similar to <ul>
+- Links are all relative to the current page - might be nice to have a reference point so that moving things around doesn't break links
+
 # Main Project notes
 
 http://13.58.131.122
