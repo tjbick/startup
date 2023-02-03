@@ -14,7 +14,7 @@
 #     exit 1
 # fi
 hostname=communotee.click
-key=../../AWS/260-server.pem
+key=~/dev/communotee.pem
 
 printf "\n----> Deploying root website to $hostname with $key\n-------------------------------\n"
 
