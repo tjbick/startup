@@ -1,4 +1,17 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
+/* No CSS here. It is all located in the CSS provided in the HTML link source. */
+.card {
+  margin: auto;
+}
+
+.menu {
+  flex: 1;
+}
+
+.main-content {
+  flex: 7;
+}
+
+#title-emphasis {
+  font-family: bradly hand, cursive;
+
 }

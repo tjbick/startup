@@ -15,9 +15,18 @@
 # fi
 hostname=communotee.click
 key=~/dev/communotee.pem
+service=startup
 
-printf "\n----> Deploying root website to $hostname with $key\n-------------------------------\n"
+printf "\n----> Deploying files for $service to $hostname with $key\n-------------------------------\n"
 
-# Step 1 - Copy all files found in the current directory.
-printf "\n----> Copy the home page files to the target.\n"
-scp -r -i $key * ubuntu@$hostname:public_html/
+# Step 1
+printf "\n----> Clear out the previous distribution on the target.\n"
+ssh -i $key ubuntu@$hostname << ENDSSH
+rm -rf services/${service}/public
+mkdir -p services/${service}/public
+ENDSSH
+
+# Step 2
+printf "\n----> Copy the distribution package to the target.\n"
+scp -r -i $key * ubuntu@$hostname:services/$service/public
+
