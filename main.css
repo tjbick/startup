@@ -60,6 +60,11 @@ body {
 
 }
 
+.invisible {
+  /* display: none; */
+  color: var(--bs-body-bg)
+}
+
 .msg-out {
   justify-content: flex-end;
 }
