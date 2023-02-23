@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TinyMCE  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Bootstrap components loaded from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.1/assets/css/docs.css" rel="stylesheet">
+    <!-- This is for the hamburger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <title>Editor</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header py-3">
+            <a href="/" class="text-decoration-none">
+                <h1>Commu<span id="title-emphasis">NOTE</span>e</h1>
+            </a>
+            <div class="nav ">
+                <ul class="generic-nav row">
+                    <li class="col header-nav"><a href="personal.html" class="nav-link active">Home</a></li>
+                    <li class="col header-nav"><a href="#" class="nav-link ">Features</a></li>
+                    <li class="col header-nav"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                </ul>
+
+            </div>
+            <div class="">
+                <button type="button" class="btn btn-outline-primary me-2">Logout</button>
+                <button type="button" class="btn btn-primary">Upgrade</button>
+
+            </div>
+        </header>
+        <!-- Hidden until screen too small
+        <div class="hamburger-header fa fa-bars">
+            <!-- This is the page nav 
+            <div class="hamburger-part">
+                <ul class="nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Personal
+                            Folders</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Physics</a></li>
+                            <li><a class="dropdown-item" href="#">Computer Science</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Groups</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Physics 121</a></li>
+                            <li><a class="dropdown-item" href="#">CS 111</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- This is for when the header itself is too big for screen
+            <div class="hamburger-complete">
+                <div class="nav ">
+                    <!-- <ul class="generic-nav">
+                    <li class="col header-nav"><a href="personal.html" class="nav-link active">Home</a></li>
+                    <li class="col header-nav"><a href="#" class="nav-link ">Features</a></li>
+                    <li class="col header-nav"><a href="pricing.html" class="nav-link">Pricing</a></li>
+
+                    <li><button type="button" class="btn btn-outline-primary me-2">Logout</button></li>
+                    <li><button type="button" class="btn btn-primary">Upgrade</button></li>
+                    <!-- </ul>
+
+                </div>
+            </div>
+            <!-- <div class="nav ">
+                <ul class="generic-nav row">
+                    <li class="col header-nav"><a href="personal.html" class="nav-link active">Home</a></li>
+                    <li class="col header-nav"><a href="#" class="nav-link ">Features</a></li>
+                    <li class="col header-nav"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                </ul>
+
+            </div>
+            <div class="">
+                <button type="button" class="btn btn-outline-primary me-2">Logout</button>
+                <button type="button" class="btn btn-primary">Upgrade</button>
+
+            </div> -->
+        </div>
+    </div>
+    <div class="page-body">
+        <nav class="menu">
+            <ul class="nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Personal
+                        Folders</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Physics</a></li>
+                        <li><a class="dropdown-item" href="#">Computer Science</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Groups</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Physics 121</a></li>
+                        <li><a class="dropdown-item" href="#">CS 111</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">People</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">George</a></li>
+                        <li><a class="dropdown-item" href="#">Allen</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="container main-content">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" aria-current="page">Personal Folders</li>
+                    <li class="breadcrumb-item" aria-current="page">Physics</li>
+                    <li class="breadcrumb-item active" aria-current="page">Something</li>
+                </ol>
+            </nav>
+            <div class="container main-content-main">
+                <button class="btn btn-primary save-file">Save</button>
+                <textarea name="editor"></textarea>
+                <script src="https://cdn.tiny.cloud/1/9wu43z1dmiavpaymatouiwmh6x3iz7ilu0btfa3lh9d12r53/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+                <script>
+                    tinymce.init({ 
+                        selector:'textarea',
+                        height:500
+                    });
+                </script>
+                <!-- <h4 class="label">Inner folders</h4>
+                <div class="card-row">
+                    <div class="col">
+                        <div class="card">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img">
+                                <Title>Folder</Title>
+                                <polygon width="100%" height="100%" class="svg-folder"
+                                    points="0,10 0,200 200,200 200,10 60,10 55,0 3,0" />
+                            </svg>
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary">Physics 121</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img">
+                                <Title>Folder</Title>
+                                <polygon width="100%" height="100%" class="svg-folder"
+                                    points="0,10 0,200 200,200 200,10 60,10 55,0 3,0" />
+                            </svg>
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary">Fun</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img">
+                                <Title>Folder</Title>
+                                <polygon width="100%" height="100%" class="svg-folder"
+                                    points="0,10 0,200 200,200 200,10 60,10 55,0 3,0" />
+                            </svg>
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary">Research</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img">
+                                <Title>Folder</Title>
+                                <polygon width="100%" height="100%" class="svg-folder"
+                                    points="0,10 0,200 200,200 200,10 60,10 55,0 3,0" />
+                            </svg>
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary">New</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="label">Files</h4>
+                <div class="card-row">
+                    <div class="col">
+                        <div class="card card-file">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img">
+                                <Title>File</Title>
+                                <polygon style="fill:lightgrey" points="0,0 125,0 200,75 200,200 0,200" />
+                                <polygon style="fill:grey" points="125,0 125,75 200,75" />
+                            </svg>
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary">Something</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-file">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img">
+                                <Title>File</Title>
+                                <polygon style="fill:lightgrey" points="0,0 125,0 200,75 200,200 0,200" />
+                                <polygon style="fill:grey" points="125,0 125,75 200,75" />
+                            </svg>
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary">New</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+        <div class="message-bar">
+            <p>Click here to see the message bar</p>
+            <div class="message-conversation">
+                <div class="scroll-box">
+                    <div class="previous-message msg-in">
+                        <p>This is something from other</p>
+                    </div>
+                    <div class="previous-message msg-out">
+                        <p>This is something from you</p>
+                    </div>
+                </div>
+                <form action="#">
+                    <label for="message-reply"></label>
+                    <input type="text" id="message-reply" name="message-reply-id" placeholder="Message"
+                        spellcheck="true">
+                    <!-- <textarea id="message-reply" name="message-reply-id"></textarea> -->
+                    <button class="btn btn-primary" onclick="alert('MessageSent')">Reply</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <footer
+            class="footer py-3">
+            <a href="https://github.com/tjbick/startup"
+                class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-decoration-none ">
+                <p>Trevor B. Github</p>
+            </a>
+        </footer>
+    </div>
+
+
+    <!-- Necessary JavaScript for interactive components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>

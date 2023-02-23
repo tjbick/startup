@@ -60,6 +60,10 @@ body {
 
 }
 
+.save-file {
+  justify-self: right;
+}
+
 .invisible {
   /* display: none; */
   color: var(--bs-body-bg)
@@ -87,6 +91,10 @@ body {
   padding: 0;
 }
 
+.save-file {
+  float: unset;
+
+}
 .main-content-main {
   padding: 1em;
 }
