@@ -207,7 +207,24 @@
 
         </div>
         <div class="message-bar">
-            <p>This is a temp </p>
+            <p>Click here to see the message bar</p>
+            <div class="message-conversation">
+                <div class="scroll-box">
+                    <div class="previous-message msg-in">
+                        <p>This is something from other</p>
+                    </div>
+                    <div class="previous-message msg-out">
+                        <p>This is something from you</p>
+                    </div>
+                </div>
+                <form action="#">
+                    <label for="message-reply"></label>
+                    <input type="text" id="message-reply" name="message-reply-id" placeholder="Message"
+                        spellcheck="true">
+                    <!-- <textarea id="message-reply" name="message-reply-id"></textarea> -->
+                    <button class="btn btn-primary" onclick="alert('MessageSent')">Reply</button>
+                </form>
+            </div>
 
         </div>
     </div>
