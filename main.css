@@ -1,20 +1,72 @@
 * {
-  --bs-body-color: #30fdcf;
-  --bs-body-bg: #333333;
-  --bs-primary-text: #48E5C2;
-  --bs-secondary-bg: #4d4d4d;
+  /* --bs-body-color: #30fdcf; */
+  /* --bs-body-bg: #847b7bb9; */
+  /* --bs-primary: #48E5C2; */
+  /* --bs-secondary-bg: #4d4d4d; */
+  /* --bs-button-primary: #30fdcf; */
+  --bs-emphasis-color: #2cefb4;
+  --bs-body-bg: #03001C;
+  --bs-secondary-bg: #301E67; 
+  --bs-body-color: white;
+  --border-color: white;
+  /* #2C5E1A green - secondary bg */
+  /* #1A4314 forest green - bg */
+  /* #107869 teal */
 
-  --bs-emphasis-color: beige;
 }
 body {
   height: 100%;
+}
+
+.header {
+  min-width: 200;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.generic-nav {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.header-nav {
+  margin: 0;
+  padding: 0;
+}
+.generic-nav.col {
+  margin: 0;
+  padding: 0;
+}
+.nav-list-row {
+  display: grid;
 }
 .card {
   margin: auto;
 }
 
+.page-body {
+  display: flex;
+  flex-direction: row;
+}
+
 .menu {
   flex: 1;
+  border-right: 1px solid var(--border-color);
+}
+
+.dropdown-menu {
+  background-color: var(--bs-secondary-bg);
+}
+
+.dropdown-item {
+  color: var(--bs-body-color);
 }
 
 .main-content {
@@ -42,7 +94,11 @@ body {
   align-items: center; */
   /* border: thin white solid; */
   /* background-color: var(--bs-secondary-bg); */
-  color : black;
+  /* color : black; */
+}
+
+.svg-folder {
+  fill: #e7c9a9;
 }
 
 .sign-in {
@@ -56,7 +112,7 @@ body {
 }
 
 .sign-in-form {
-  background-color: var(--bs-emphasis-color);
+  background-color: var(--bs-secondary-bg);
   text-align: start;
   margin: 0;
   padding-bottom: 10px;
@@ -82,3 +138,10 @@ body {
   padding-right: 100vw;
 
 } */
+
+@media (max-width: 770px) {
+  .header {
+    flex-direction: column;
+  }
+  
+}
