@@ -31,11 +31,12 @@ file sharing, CommuNOTEe brings students, with their notes, together.
 ## Simon-html
 
 - The html classes (i.e. <div class="...">) are only used when it is nice to have things grouped together. Not all of them need classes
-- The <menu> tag is similar to <ul>
+- The &lt;menu&gt; tag is similar to &lt;ul&gt;
 - Links are all relative to the current page - might be nice to have a reference point so that moving things around doesn't break links
 
 # Main Project notes
 
-http://13.58.131.122
-
-ssh -i [file] ubuntu@13.58.131.122
+- display: block; float: &lt;direction&gt;
+- bootstrap is nice, but not knowing exactly what's happening can be the cause for much debugging - better to use just the basic things and then make your own
+- It's easier to shrink the size of the container than fill it with the contents.
+- It never hurts to have another layer of div's
