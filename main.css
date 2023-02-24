@@ -57,7 +57,7 @@ body {
 }
 
 .msg-in {
-
+  justify-content: unset;
 }
 
 .save-file {
@@ -93,8 +93,8 @@ body {
 
 .save-file {
   float: unset;
-
 }
+
 .main-content-main {
   padding: 1em;
 }
@@ -191,6 +191,7 @@ body {
 
 
 #sign-in-menu {
+  flex-direction: unset;
   /* display: flex; */
   /* flex-direction: column;
   justify-content: center;
